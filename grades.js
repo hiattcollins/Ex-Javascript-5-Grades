@@ -1,17 +1,5 @@
 
 
-
-// let numbers = [2, 4, 100, 33, 54, 1, 6];
-
-// console.log("numbers", numbers);
-// let sortedNumbers = numbers.sort(function(first, second) {
-// 	console.log("first:", first, "second:", second);
-// 	console.log("first minus second:", first - second);
-// 	return first - second;
-// });
-
-// console.log("sortedNumbers", sortedNumbers);
-
 var scores = [82, 71, 95, 55, 98, 69, 72, 78, 84, 64, 58, 87]
 
 console.log("Scores:", scores);
