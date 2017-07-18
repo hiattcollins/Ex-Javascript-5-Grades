@@ -26,15 +26,15 @@ let gradeC = 0;
 let gradeB = 0;
 let gradeA = 0;
 
-// let lengthOfSortedScores = sortedScores.length;
+let arrayLength = sortedScores.length;
 
-console.log("Sorted scores length:", sortedScores.length);
+// console.log("Sorted scores length:", arrayLength);
 
 // ********** Get number of each grade ******** //
 
-for (var i = 0; i < sortedScores.length; i++) {
+for (var i = 0; i < arrayLength; i++) {
 
-	console.log(Number(sortedScores[i]));
+	// console.log(Number(sortedScores[i]));
 
 	if (Number(sortedScores[i]) >= 50 && Number(sortedScores[i]) <= 60) {
 		gradeF += 1;
@@ -57,6 +57,53 @@ console.log("Number of D grades:", gradeD);
 console.log("Number of C grades:", gradeC);
 console.log("Number of B grades:", gradeB);
 console.log("Number of A grades:", gradeA);
+
+// ********** Find lowest grade ******** //
+
+lowestGrade = "";
+
+if (gradeF > 0) {
+	lowestGrade = "F";
+	// break;
+} else if (gradeD > 0) {
+	lowestGrade = "D";
+	// break;
+} else if (gradeC > 0) {
+	lowestGrade = "C";
+	// break;
+}  else if (gradeB > 0) {
+	lowestGrade = "B";
+}  else if (gradeA > 0) {
+	lowestGrade = "A";
+}  else {
+	lowestGrade = "There appear no be no grades here.";
+}
+
+console.log("The lowest grade in this class is:", lowestGrade);
+
+// ********** Find highest grade ******** //
+
+highestGrade = "";
+
+if (gradeA > 0) {
+	highestGrade = "A";
+	// break;
+} else if (gradeB > 0) {
+	highestGrade = "B";
+	// break;
+} else if (gradeC > 0) {
+	highestGrade = "C";
+	// break;
+}  else if (gradeD > 0) {
+	highestGrade = "D";
+}  else if (gradeA > 0) {
+	highestGrade = "F";
+}  else {
+	highestGrade = "There appear no be no grades here.";
+}
+
+console.log("The highest grade in this class is:", highestGrade);
+
 
 // Requirements
 
